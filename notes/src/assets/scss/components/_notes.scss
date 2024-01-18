@@ -1,0 +1,52 @@
+.notes {
+  background-color: $light-blue;
+
+  width: 60%;
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    &__colorChanger {
+      width: 40px;
+      height: 40px;
+    }
+    &__btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  }
+  &__input {
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      &--gray {
+        background-color: gray;
+      }
+      &--purple {
+        background-color: purple;
+      }
+      &--blue {
+        background-color: $dark-blue;
+      }
+      &--red {
+        background-color: red;
+      }
+      &--green {
+        background-color: greenyellow;
+      }
+    }
+  }
+}
