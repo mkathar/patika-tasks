@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Grape Nuts", cursive;
+  height: 100vh;
+}
+
+.game {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  height: 70%;
+  flex-wrap: wrap;
+  border: 4px solid #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #282c35;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.game__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #444;
+  border-radius: 15px 15px 0 0;
+}
+.game__info__score {
+  font-size: 20px;
+  color: #ddd;
+}
+.game__info__restart {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+.game__info__restart:hover {
+  background-color: #45a049;
+}
+.game__area {
+  border: 2px solid #444;
+  width: calc(25% - 20px);
+  height: calc(20% - 20px);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  background-color: #6665ee;
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.game__area:hover {
+  background-color: #574fd1;
+  transform: scale(1.05);
+}/*# sourceMappingURL=index.css.map */
