@@ -1,0 +1,19 @@
+.chart {
+  width: 80%;
+  margin: 0 auto;
+  height: 700px;
+  max-width: 500px;
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    &__select {
+      border: none;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: $dark-blue;
+      color: white;
+    }
+  }
+}

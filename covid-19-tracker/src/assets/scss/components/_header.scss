@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: $anti-flash-white;
+  flex-direction: column;
+
+  &__title {
+    color: $dark-blue;
+  }
+  &__subtitle {
+  }
+}

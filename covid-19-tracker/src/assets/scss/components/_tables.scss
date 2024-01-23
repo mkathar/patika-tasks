@@ -1,0 +1,46 @@
+.table {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+  &__group {
+    &--infected {
+      background-color: #b0ecfc;
+      border-bottom: 10px solid #08b2e3;
+    }
+    &--recovered {
+      background-color: #c7f1bb;
+      border-bottom: 10px solid #39981f;
+    }
+    &--deaths {
+      border-bottom: 10px solid #b80003;
+      background-color: #ffc2c3;
+    }
+    &--active {
+      border-bottom: 10px solid #feb95f;
+      background-color: #ffe4c2;
+    }
+
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    &__title {
+      font-size: 24px;
+    }
+    &__count {
+      font-size: 32px;
+    }
+    &__updateDate {
+      font-size: 24px;
+    }
+    &__date {
+      color: gray;
+    }
+    &__desc {
+    }
+  }
+}
