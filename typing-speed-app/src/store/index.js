@@ -1,5 +1,4 @@
-// src/store.js
-import { createSlice, configureStore } from "@reduxjs/toolkit";
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const gameSlice = createSlice({
   name: "game",
@@ -9,6 +8,7 @@ const gameSlice = createSlice({
     startTime: 0,
     isRunning: false,
     text: "",
+    remainingTime: 60,
   },
   reducers: {
     setCurrentWord: (state, action) => {
@@ -26,18 +26,29 @@ const gameSlice = createSlice({
     setText: (state, action) => {
       state.text = action.payload;
     },
+    setRemainingTime: (state, action) => {
+      state.remainingTime = action.payload;
+    },
   },
 });
 
-export const { setCurrentWord, setScore, setStartTime, setIsRunning, setText } =
-  gameSlice.actions;
+export const {
+  setCurrentWord,
+  setScore,
+  setStartTime,
+  setIsRunning,
+  setText,
+  setRemainingTime,
+} = gameSlice.actions;
 
 export const selectGame = (state) => state.game;
 
+const rootReducer = {
+  game: gameSlice.reducer,
+};
+
 const store = configureStore({
-  reducer: {
-    game: gameSlice.reducer,
-  },
+  reducer: rootReducer,
 });
 
 export default store;

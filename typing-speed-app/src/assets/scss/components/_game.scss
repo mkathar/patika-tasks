@@ -1,0 +1,16 @@
+.game {
+  background-color: $dark-blue;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  &__start {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
