@@ -1,0 +1,43 @@
+.weather {
+  background-color: aqua;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  &__title {
+    color: white;
+  }
+
+  &__group {
+    display: flex;
+    width: 100%;
+
+    &__box {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      &__temp {
+        color: white;
+      }
+      &__content {
+        &__img {
+          width: 100px;
+          height: 100x;
+        }
+        &__desc {
+          color: white;
+        }
+      }
+      &__list {
+        color: white;
+        height: 80%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+      }
+    }
+  }
+}

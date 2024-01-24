@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: $anti-flash-white;
+  width: 60%;
+  column-gap: 3rem;
+  border-radius: 15px 15px 0 0;
+  &__input {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid $dark-blue;
+    padding-left: 10px;
+  }
+  &__title {
+    color: $dark-blue;
+  }
+}
