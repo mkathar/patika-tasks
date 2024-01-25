@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Grape Nuts", cursive;
+}
+
+.dama-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dama {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: 50vh;
+  /* Siyah kareler */
+  /* Beyaz kareler */
+}
+.dama .dama__box {
+  width: 12%;
+  height: 12vh;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #6665ee;
+}
+.dama .dama__box__stone {
+  border: 3px solid red;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.dama .black {
+  background-color: #333;
+}
+.dama .white {
+  background-color: #ddd;
+}
+.dama .dama__coordinate {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.dama .dama__coordinate__label {
+  width: 12%;
+  text-align: center;
+  color: #6665ee;
+}
+.dama .dama__coordinate__label--left {
+  text-align: left;
+}
+.dama .move-history {
+  margin-top: 20px;
+}
+.dama .move-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.dama .move-history ul li {
+  margin-bottom: 5px;
+}/*# sourceMappingURL=index.css.map */
